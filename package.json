@@ -2,25 +2,39 @@
   "name": "building-stunning-webapps-2022",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "dependencies": {
+    "@arcgis/core": "^4.24.5",
+    "@esri/calcite-components-react": "^0.24.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-virtualized-auto-sizer": "^1.0.6",
+    "react-window": "^1.8.7",
+    "styled-components": "^5.3.5",
+    "use-debounce": "^8.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "ncp": "^2.0.0",
+    "prettier": "^2.7.1",
+    "prop-types": "^15.8.1"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "prettier"
     ]
   },
   "browserslist": {
