@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+![Esri UC Banner](https://github.com/EsriPS/stunning-webapps-2022/blob/main/uc-banner.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Building Stunning Web Apps
 
-## Available Scripts
+This readme will serve as a quick reference page for the 2022 Esri UC Preconference Seminar: **Building Stunning Web Apps**
 
-In the project directory, you can run:
+In this repo, you can find:
 
-### `npm start`
+1. The source code for "Discover Colorado" – the project we will be using to showcase what it takes to build stunning web apps. We've built this app up incrementally so you can follow along and see the major stages of a web dev project.
+2. This readme, with the agenda and links to resources we will reference throughout the workshop.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Agenda
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Workshop Agenda](https://github.com/EsriPS/stunning-webapps-2022/blob/main/agenda.png)
 
-### `npm test`
+## Code Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Look here for quick links to get to the incremental builds of the Discover Colorado app. We've created a separate git branch for each "module". In addition to that, you can check out the app running at each of these stages using the links below.
 
-### `npm run build`
+#### 0. Starter
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We'll start with nothing more than the output of [Create React App](https://create-react-app.dev/), a command line tool built by the React team (`npx create-react-app`).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[View source on GitHub](https://github.com/EsriPS/building-stunning-webapps-2022/tree/0-starter)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Open app in CodeSandbox](https://codesandbox.io/s/github/EsriPS/building-stunning-webapps-2022/tree/0-starter)
 
-### `npm run eject`
+#### 1. The foundations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This represents our prototypical "boilerplate" application. It comes with all the foundational bits and pieces we at Esri use most often – developer tooling, a UI library, a router, and a few other nuggets.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[View source on GitHub](https://github.com/EsriPS/building-stunning-webapps-2022/tree/1-foundations)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[Open app in CodeSandbox](https://codesandbox.io/s/github/EsriPS/building-stunning-webapps-2022/tree/1-foundations)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### 2. Adding layout
 
-## Learn More
+This branch builds upon our boilerplate and adds some opinionated structure to our app. We'll start using React and Styled Components to see our app take shape. This is when we start writing code specific to the Discover Colorado project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[View source on GitHub](https://github.com/EsriPS/building-stunning-webapps-2022/tree/2-layout)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Open app in CodeSandbox](https://codesandbox.io/s/github/EsriPS/building-stunning-webapps-2022/tree/2-layout)
 
-### Code Splitting
+#### 3. Components!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+One of (if not _the_) thesis of this workshop is to "think in components". We will talk about lots of benefits to this approach but we'll also roll up our sleeves and show you how the ~sausage~ components are made here at Esri 😄.
 
-### Analyzing the Bundle Size
+[View source on GitHub](https://github.com/EsriPS/building-stunning-webapps-2022/tree/3-components)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Open app in CodeSandbox](https://codesandbox.io/s/github/EsriPS/building-stunning-webapps-2022/tree/3-components)
 
-### Making a Progressive Web App
+#### 4. App state and (finally)... some GIS!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This module represents our final product for this workshop app. We'll take the layouts and our new box of components and put some brains into the app. We introduce some more advanced concepts here, like the global state, lifecycle methods, and lots of JSAPI goodness... but we'll be sure to hammer home the concepts first so you can follow along.
 
-### Advanced Configuration
+[View source on GitHub](https://github.com/EsriPS/building-stunning-webapps-2022/tree/4-state-and-map)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Open app in CodeSandbox](https://codesandbox.io/s/github/EsriPS/building-stunning-webapps-2022/tree/4-state-and-map)
