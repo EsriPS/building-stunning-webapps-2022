@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 // App components
 import User from 'components/User';
+import TrailSearch from 'components/TrailSearch';
 import Breakpoint from 'App/Breakpoint';
 import Routes from 'constants/routes';
 
@@ -20,7 +21,9 @@ import { CalciteIcon } from '@esri/calcite-components-react';
 const Header = () => {
   return (
     <StyledHeader>
-      <SearchWrapper>Trail Search Placeholder</SearchWrapper>
+      <SearchWrapper>
+        <TrailSearch />
+      </SearchWrapper>
       <StyledH1>
         <Breakpoint name="desktop">
           <Link to={Routes.Home}>Discover Colorado</Link>

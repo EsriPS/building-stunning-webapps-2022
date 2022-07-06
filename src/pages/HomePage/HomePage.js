@@ -6,6 +6,7 @@ import Routes from 'constants/routes';
 
 // App components
 import Hero from 'components/Hero';
+import PopularTrail from 'components/PopularTrail';
 
 // JSON & Styles
 import { HomePageLayout, PopularTrailsContainer } from './HomePage-styled';
@@ -20,9 +21,9 @@ const HomePage = () => {
       </div>
       <Hero />
       <PopularTrailsContainer>
-        <section></section>
-        <section>Popular Trails Placeholder</section>
-        <section></section>
+        <PopularTrail id={0} />
+        <PopularTrail id={1} />
+        <PopularTrail id={2} />
       </PopularTrailsContainer>
     </HomePageLayout>
   );
