@@ -2,6 +2,7 @@
 import Header from 'components/Header';
 import Sidebar from 'components/Sidebar';
 import Map from 'components/Map';
+import SubHeader from 'components/SubHeader';
 
 // JSON & Styles
 import {
@@ -18,6 +19,7 @@ const MapPage = () => {
   return (
     <MapPageLayout>
       <Header />
+      <SubHeader />
       <ContentWrapper>
         <SidebarWrapper>
           <Sidebar />

@@ -15,6 +15,8 @@ import '@esri/calcite-components/dist/calcite/calcite.css';
 // App Setup
 import packageJson from '../package.json';
 import App from 'App';
+import UserContextProvider from 'contexts/UserContext';
+import MapContextProvider from 'contexts/MapContext';
 import './index.css';
 
 // App runs at the root locally, but under /{homepage} in production
@@ -33,9 +35,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter basename={basename}>
-      <Routes>
-        <Route path="*" element={<App />} />
-      </Routes>
+      <UserContextProvider>
+        <MapContextProvider>
+          <Routes>
+            <Route path="*" element={<App />} />
+          </Routes>
+        </MapContextProvider>
+      </UserContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

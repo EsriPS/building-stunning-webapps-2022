@@ -16,17 +16,11 @@ import {
   ElevationWrapper,
 } from './TrailCard-styled';
 
-import dummyFeature from 'utils/dummyFeature';
-
 // Third-party components (buttons, icons, etc.)
 import { CalciteIcon } from '@esri/calcite-components-react';
 import { Biking, Dog, Hiking, Horse, Road, Vehicle } from 'icons/icons';
 
-export default function TrailCard({
-  style,
-  attributes = dummyFeature.attributes,
-  setSelection,
-}) {
+export default function TrailCard({ style, attributes, setSelection }) {
   const slope = getSlope(attributes);
 
   const isHikingAllowed = () => {
@@ -50,7 +44,13 @@ export default function TrailCard({
   };
 
   const handleOnClick = async () => {
-    console.log('trail clicked', attributes);
+    const { getTrailFeature } = await import('data/map');
+
+    // Get the full feature object from the layer
+    const feature = await getTrailFeature(attributes.FID);
+
+    // Set the selected feature in MapContext
+    setSelection(feature);
   };
 
   return (
