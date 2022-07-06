@@ -5,8 +5,8 @@ import { Routes, Route } from 'react-router-dom';
 import AppRoutes from 'constants/routes';
 
 // App pages & components
-import ComingSoon from 'components/ComingSoon';
-import NoMatch from 'pages/NoMatch';
+import HomePage from 'pages/HomePage';
+import MapPage from 'pages/MapPage';
 
 // Third-party components (buttons, icons, etc.)
 
@@ -14,9 +14,9 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path={AppRoutes.Home} element={<ComingSoon />} />
-        <Route path="*" element={<NoMatch />} />
+        <Route path={AppRoutes.Home} element={<HomePage />} />
       </Routes>
+      <MapPage />
     </>
   );
 };
