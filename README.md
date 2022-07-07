@@ -1,4 +1,4 @@
-![Esri UC Banner](https://github.com/EsriPS/stunning-webapps-2022/blob/main/uc-banner.png)
+![Esri UC Banner](https://github.com/EsriPS/building-stunning-webapps-2022/blob/0-starter/uc-banner.jpg?raw=true)
 
 # Building Stunning Web Apps
 
@@ -11,7 +11,7 @@ In this repo, you can find:
 
 ## Agenda
 
-![Workshop Agenda](https://github.com/EsriPS/stunning-webapps-2022/blob/main/agenda.png)
+![Workshop Agenda](https://github.com/EsriPS/building-stunning-webapps-2022/blob/0-starter/agenda.png?raw=true)
 
 ## Code Links
 
