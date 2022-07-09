@@ -26,10 +26,7 @@ const PopularTrail = ({ id }) => {
         <>
           <StyledCardTitle>{trail.name}</StyledCardTitle>
           <StyledCardDescription>{trail.description}</StyledCardDescription>
-          <Link
-            // style={{ width: "100%" }}
-            to={`/details/${trail.id}`}
-          >
+          <Link to={`/details/${trail.id}`}>
             <CalciteButton width="full" scale="l">
               Check it Out
             </CalciteButton>

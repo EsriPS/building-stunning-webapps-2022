@@ -22,8 +22,8 @@ const HomePage = () => {
       <Hero />
       <PopularTrailsContainer>
         <PopularTrail id={0} />
-        <PopularTrail id={1} />
-        <PopularTrail id={2} />
+        {/* <PopularTrail id={1} />
+        <PopularTrail id={2} /> */}
       </PopularTrailsContainer>
     </HomePageLayout>
   );

@@ -1,32 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { CalciteCard } from "@esri/calcite-components-react";
+import { CalciteCard } from '@esri/calcite-components-react';
 
-const StyledPopularTrail = styled.div`
-  justify-self: center;
-`;
+const StyledPopularTrail = styled.div``;
 
-const StyledThumbnail = styled.img`
-  width: 100%;
-`;
+const StyledThumbnail = styled.img``;
 
-const StyledCardTitle = styled.h3`
-  margin: 0.5rem 0;
-  font-size: 1.25rem;
-  color: var(--calcite-ui-text-2);
-  font-weight: var(--calcite-font-weight-medium);
-`;
+const StyledCardTitle = styled.h3``;
 
-const StyledCardDescription = styled.p`
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
-  color: var(--calcite-ui-text-3);
-`;
+const StyledCardDescription = styled.p``;
 
-const StyledCalciteCard = styled(CalciteCard)`
-  max-width: 400px;
-`;
+const StyledCalciteCard = styled(CalciteCard)``;
 
 export {
   StyledPopularTrail,
@@ -35,4 +19,3 @@ export {
   StyledCardDescription,
   StyledCalciteCard,
 };
-
