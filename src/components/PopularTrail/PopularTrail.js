@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import trails from './trails.json';
 import {
   StyledPopularTrail,
-  StyledCalciteCard,
+  StyledCard,
   StyledThumbnail,
   StyledCardTitle,
   StyledCardDescription,
@@ -21,7 +21,7 @@ const PopularTrail = ({ id }) => {
 
   return (
     <StyledPopularTrail>
-      <StyledCalciteCard>
+      <StyledCard>
         <StyledThumbnail src={trail.photo} alt={trail.name} />
         <>
           <StyledCardTitle>{trail.name}</StyledCardTitle>
@@ -32,7 +32,7 @@ const PopularTrail = ({ id }) => {
             </CalciteButton>
           </Link>
         </>
-      </StyledCalciteCard>
+      </StyledCard>
     </StyledPopularTrail>
   );
 };
